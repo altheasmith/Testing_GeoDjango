@@ -1,4 +1,5 @@
 from django.contrib.gis import admin
 from world.models import WorldBorder
 
-admin.site.register(WorldBorder, admin.GeoModelAdmin)
+admin.site.register(WorldBorder, admin.OSMGeoAdmin)
+# admin.site.register(WorldBorder, admin.GeoModelAdmin)
