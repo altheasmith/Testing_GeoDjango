@@ -1,5 +1,7 @@
 ###Creating an Ubuntu 14.04 Virtual Machine with Vagrant to Use GeoDjango
 
+######Adapted from [vmenezes](https://github.com/vmenezes)
+
 Vagrant allows the user to work in Linux command line without needing to open a graphical virtual machine interface. ?CHECK VM REQS INSTALLATION?
 
 #####Create and Connect to Virtual Machine
