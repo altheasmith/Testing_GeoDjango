@@ -2,19 +2,13 @@
 
 Vagrant allows a user to work in Linux command line without needing to open a graphical virtual machine interface.
 
-1. Install Vagrant, VirtualBox, and VirtualEnv
+1. Install Vagrant and VirtualBox
 
-2. Initialize your vagrant directory with:
+2. Initialize your vagrant directory with: `$ vagrant init ubuntu/trusty64`
 
-`$ vagrant init ubuntu/trusty64`
+3. Add/turn on a virtual machine with: `$ vagrant up`
 
-3. Add/turn on a virtual machine with:
-
-`$ vagrant up`
-
-4. Connect to the virtual machine with:
-
-`$ vagrant ssh`
+4. Connect to the virtual machine with: `$ vagrant ssh`
 
 
 Install minor requirements for our development
