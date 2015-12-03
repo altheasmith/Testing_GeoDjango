@@ -1,17 +1,20 @@
-###Creating an Ubuntu 14.04 Virtual Machine with Vagrant to run GeoDjango
-#####(from OS X)
+###Creating an Ubuntu 14.04 Virtual Machine with Vagrant to Use GeoDjango
 
-1. Install:
-- Vagrant
-- VirtualBox
+Vagrant allows a user to work in Linux command line without needing to open a graphical virtual machine interface.
 
-2. Initialize your vagrant directory:
+1. Install Vagrant, VirtualBox, and VirtualEnv
+
+2. Initialize your vagrant directory with:
 
 `$ vagrant init ubuntu/trusty64`
 
+3. Add/turn on a virtual machine with:
 
-$ vagrant up
-$ vagrant ssh```
+`$ vagrant up`
+
+4. Connect to the virtual machine with:
+
+`$ vagrant ssh`
 
 
 Install minor requirements for our development
