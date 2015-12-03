@@ -1,6 +1,6 @@
 ###Creating an Ubuntu 14.04 Virtual Machine with Vagrant to Use GeoDjango
 
-Vagrant allows a user to work in Linux command line without needing to open a graphical virtual machine interface.
+Vagrant allows the user to work in Linux command line without needing to open a graphical virtual machine interface. ?CHECK VM REQS INSTALLATION?
 
 #####Create and Connect to Virtual Machine
 
@@ -8,12 +8,15 @@ Install Vagrant and VirtualBox with:
 ?ADD INSTALLATION?
 
 Initialize your vagrant directory with:
+
 `$ vagrant init ubuntu/trusty64`
 
 Add/turn on a virtual machine with:
+
 `$ vagrant up`
 
 Connect to the virtual machine with:
+
 `$ vagrant ssh`
 
 Now you are running an Ubuntu command line.
@@ -22,9 +25,11 @@ Now you are running an Ubuntu command line.
 #####Set Up Virtual Machine
 
 Install VirtualEnv with:
+
 `$ sudo apt-get install python-virtualenv`
 
 Install Python with:
+
 `$ sudo apt-get install python3-dev`
 
 Install and configure PostgreSQL with:
@@ -56,6 +61,7 @@ $ sudo -u postgres psql -c "CREATE EXTENSION postgis; CREATE EXTENSION postgis_t
 ```
 
 Install GeoDjango Library Requirements with:
+
 `$ sudo apt-get install libproj-dev gdal-bin`
 
 
@@ -68,7 +74,9 @@ $ vagrant halt
 ```
 
 Uncomment/edit the following lines in the Vagrantfile in your Vagrant directory:
+
 `config.vm.network "public_network"`
+
 `config.vm.synced_folder "/PROJECT/DIRECTORY/ON/HOME/COMPUTER", "/home/vagrant/PROJECTNAME"`
 
 Turn on and check the IP of your virtual machine with:
@@ -81,4 +89,5 @@ $ ifconfig
 The IP Address to use is the second one down in the list of three. ?ADD IFCONFIG TEXT?
 
 Start the server from this IP address with:
+
 ``$ python3 manage.py runserver VIRTUAL_MACHINE_IP:8000`
